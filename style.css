@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Orbitron:wght@500&display=swap");
+/* Estilos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+}
+
+html {
+    font: 62.5%;
+}
+
+ h1 {
+    font-family: 'Orbitron', 'Dosis', sans-serif;
+    font-size: 4rem;
+    color: #0c3fb7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;/*deixar em coluna*/
+    align-items: center;/*p centralizar*/
+    gap: 20px;/*pra espaçar eles*/
+    padding-top: 45px;/*p descolar do topo*/
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+/* Estilos para o cronômetro */
+.timer {
+    font-family: 'Orbitron', 'Dosis', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+}
+/* Estilos para os elementos de tempo (minutos, segundos, milissegundos) */
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #172953;
+    min-width: 110px; /* largura fixa para cada elemento que exibe os números */
+    font-family: "Courier New", Dosis, monospace;
+}
+
+/* Estilos para o separador ":" */
+.separator {
+    padding: 10px;
+    color: #525763;
+}
+/* Estilos específicos para os milissegundos */
+#miliseconds {
+    font-size: 2.6rem;
+    color: #525763;
+}
+/* Estilos para os botões de controle */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+/* Estilos para os botões */
+.btn {
+    padding: 10px 20px;/*p deixar eles retangulares*/
+    font-size: 1.1rem;
+    font-weight: bold;/*negrito*/
+    border-radius: 30px;/*deixa arredondado*/
+    cursor: pointer;/*escurece qndo passa o cursor*/
+    border: 1px solid #ccc;
+    transition: all .2s ease-in-out;/*"animação"qndo passa o cursor*/
+}
+/* Estilos de hover para os botões */
+.btn:hover {
+    transform: scale(1.1);
+}
+/* Estilos específicos para o botão de iniciar */
+#startBtn {
+    background-color: #0c3fb7;
+    color: #fff;
+}
+
+#pauseBtn , #resumeBtn {
+    display: none; /*depois vai ser mudado no js*/
+}
