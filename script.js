@@ -84,3 +84,4 @@ function formatTime(time) {
 function formatMiliseconds(time) {
     return time < 100 ? time.padStart(3, "0") : time;
 }
+
